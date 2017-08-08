@@ -1,12 +1,25 @@
+/*Общие стили*/
+
+
 /*Шапка*/
 .header-block {
   background-color: #f4f7f9;
 }
+
+/*Верхняя плашка с поиском*/
 .header-block__top-line{
   background-color: #33445a;
   width: 100%;
   height: 42px;
 }
+
+.header-block__logo {}
+.header-block__search-block {}
+.header-block__bookmarks {}
+.header-block__basket {}
+.button-basket {}
+
+/*Блок с заголовком и контактами*/
 .header-main-block {
   width: 940px;
   height: 160px;
@@ -18,7 +31,7 @@
 .button {}
 .button-login {} .button-registration {}
 
-
+/*Главное меню*/
 .main-menu {}
 
 /*Блок с картинками и кнопками*/
