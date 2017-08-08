@@ -1,5 +1,25 @@
 /*Шапка*/
-.header-block {}
+.header-block {
+  background-color: #f4f7f9;
+}
+.header-block__top-line{
+  background-color: #33445a;
+  width: 100%;
+  height: 42px;
+}
+.header-main-block {
+  width: 940px;
+  height: 160px;
+  margin: 0 auto;
+}
+
+.header-main-block__site-name {} .header-main-block__contacts {} .contacts__phone {}
+.contacts__address {} .header-main-block__control {}
+.button {}
+.button-login {} .button-registration {}
+
+
+.main-menu {}
 
 /*Блок с картинками и кнопками*/
 .promo-block {}
