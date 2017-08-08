@@ -1,0 +1,27 @@
+/*Шапка*/
+.header-block {}
+
+/*Блок с картинками и кнопками*/
+.promo-block {}
+
+/*Популярные продукты*/
+.popular-products {}
+.popular-products__header{}
+.popular-products__list{}
+
+
+
+/*Популярные производители*/
+.popular-manufacturers {}
+.popular-manufactirers__header{}
+.popular-products__list{}
+
+/*Сервисный блок*/
+.service-block{}
+
+/*Информация о компании и контакты*/
+.information-block{}
+
+/*Подвал*/
+.footer{}
+.footer-menu-block{} .footer-bottom{}
