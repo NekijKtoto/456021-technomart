@@ -62,8 +62,10 @@ ul {
   padding: 0 10px;
 }
 
-.header-block__bookmarks {}
-.header-block__basket {}
+.bookmarks {}
+
+.basket {}
+.basket_not-empty {}
 
 .search::before, .bookmarks::before, .basket::before {
   content: '';
@@ -120,8 +122,11 @@ ul {
 .contacts__address {}
 
 .header-main-block__control {}
+.person {}
+.inner-control {}
 
 .button-login {}
+.button-logout {}
 .button-registration {}
 
 
@@ -144,14 +149,20 @@ ul {
 .slider__control_right {}
 
 
-/*Популярные продукты*/
+/*Популярные товары*/
 .popular-products {}
-.popular-products__list {}
-.popular-products__item {}
-.popular-products__item-picture {}
-.popular-products__item-title {}
-.popular-products__item-price {}
-.popular-products__item-price_strike {}
+
+
+/*Товары*/
+.products__list {}
+.products__item {}
+.products__control {}
+.products__control-buy {}
+.products__control-bookmark {}
+.products__item-picture {}
+.products__item-title {}
+.products__item-price {}
+.products__item-price_strike {}
 
 
 /*Популярные производители*/
@@ -195,3 +206,32 @@ ul {
 .modal-close {}
 .write-us {}
 .contacts-map {}
+
+
+
+/*******************************************/
+/***********Стили для каталога**************/
+/*******************************************/
+
+/*Хлебные крошки*/
+.breadcumbs {}
+.breadcumbs li:first-child {}
+.breadcumbs li:last-child {}
+
+
+/*Каталог*/
+.catalog {}
+.catalog__filter {}
+.catalog__list {}
+.catalog__item {}
+
+/*сортировка*/
+.sort {}
+.sort-title {}
+.sort-type {}
+
+/*Пагинатор*/
+.pager {}
+.pager__item {}
+
+.info-block {}

@@ -49,7 +49,7 @@
         <ul class="main-menu__list">
           <li><a href="#" class="main-menu__item_current">Главная</a></li>
           <li><a href="#" class="main-menu__item">Компания</a></li>
-          <li><a href="#" class="main-menu__item">Каталог</a></li>
+          <li><a href="/catalog.html" class="main-menu__item">Каталог</a></li>
           <li><a href="#" class="main-menu__item">Новости</a></li>
           <li><a href="#" class="main-menu__item">Спецпредложения</a></li>
           <li><a href="#" class="main-menu__item">Доставка</a></li>
@@ -104,34 +104,50 @@
       <section class="popular-products">
         <h2>Популярные товары</h2>
         <a href="#" class="btn">Все популярные товары</a>
-        <ul class="popular-products__list">
-          <li class="popular-products__item">
+        <ul class="products__list">
+          <li class="products__item">
             <!-- Не заполнен ALT у картинки, т.к. дальше идет подпись этой картинки -->
-            <img class="popular-products__item-picture" src="http://placehold.it/220x175" width="220" height="175" alt="">
-            <span class="popular-products__item-title">Перфоратор BOSH BFG 9000</span>
-            <span class="popular-producrs__item-price_strike">32500 Р.</span>
-            <span class="popular-producrs__item-price">25500 Р.</span>
+            <span class="products__control">
+              <a href="#" class="btn products__control-buy">Купить</a>
+              <a href="#" class="btn products__control-bookmark">В закладки</a>
+            </span>
+            <img class="products__item-picture" src="http://placehold.it/220x175" width="220" height="175" alt="">
+            <h3 class="products__item-title">Перфоратор BOSH BFG 9000</h3>
+            <span class="producrs__item-price_strike">32500 Р.</span>
+            <span class="producrs__item-price">25500 Р.</span>
           </li>
-          <li class="popular-products__item">
+          <li class="products__item">
             <!-- Не заполнен ALT у картинки, т.к. дальше идет подпись этой картинки -->
-            <img class="popular-products__item-picture" src="http://placehold.it/220x175" width="220" height="175" alt="">
-            <span class="popular-products__item-title">Перфоратор BOSH BFG 3000</span>
-            <span class="popular-producrs__item-price_strike">22500 Р.</span>
-            <span class="popular-producrs__item-price">15500 Р.</span>
+            <span class="products__control">
+              <a href="#" class="btn products__control-buy">Купить</a>
+              <a href="#" class="btn products__control-bookmark">В закладки</a>
+            </span>
+            <img class="products__item-picture" src="http://placehold.it/220x175" width="220" height="175" alt="">
+            <h3 class="products__item-title">Перфоратор BOSH BFG 3000</h3>
+            <span class="producrs__item-price_strike">22500 Р.</span>
+            <span class="producrs__item-price">15500 Р.</span>
           </li>
-          <li class="popular-products__item">
+          <li class="products__item">
             <!-- Не заполнен ALT у картинки, т.к. дальше идет подпись этой картинки -->
-            <img class="popular-products__item-picture" src="http://placehold.it/220x175" width="220" height="175" alt="">
-            <span class="popular-products__item-title">Перфоратор BOSH BFG 6000</span>
-            <span class="popular-producrs__item-price_strike">30500 Р.</span>
-            <span class="popular-producrs__item-price">25500 Р.</span>
+            <span class="products__control">
+              <a href="#" class="btn products__control-buy">Купить</a>
+              <a href="#" class="btn products__control-bookmark">В закладки</a>
+            </span>
+            <img class="products__item-picture" src="http://placehold.it/220x175" width="220" height="175" alt="">
+            <h3 class="products__item-title">Перфоратор BOSH BFG 6000</h3>
+            <span class="producrs__item-price_strike">30500 Р.</span>
+            <span class="producrs__item-price">25500 Р.</span>
           </li>
-          <li class="popular-products__item">
+          <li class="products__item">
             <!-- Не заполнен ALT у картинки, т.к. дальше идет подпись этой картинки -->
             <span class="label-new">new</span>
-            <img class="popular-products__item-picture" src="http://placehold.it/220x175" width="220" height="175" alt="">
-            <span class="popular-products__item-title">Перфоратор BOSH BFG 2000</span>
-            <span class="popular-producrs__item-price">12500 Р.</span>
+            <span class="products__control">
+              <a href="#" class="btn products__control-buy">Купить</a>
+              <a href="#" class="btn products__control-bookmark">В закладки</a>
+            </span>
+            <img class="products__item-picture" src="http://placehold.it/220x175" width="220" height="175" alt="">
+            <h3 class="products__item-title">Перфоратор BOSH BFG 2000</h3>
+            <span class="producrs__item-price">12500 Р.</span>
           </li>
         </ul>
       </section>
@@ -239,7 +255,7 @@
           <ul class="footer-menu__list">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
-            <li><a href="#">Каталог</a></li>
+            <li><a href="/catalog.html">Каталог</a></li>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
@@ -281,7 +297,7 @@
   <section class="modal write-us">
     <h2 class="visibility-hidden">Напишите нам</h2>
     <a href="#" class="modal-close">X</a>
-    <form action="/" class="form write-us">
+    <form action="/" method="post" class="form write-us">
       <label>
         Ваше имя:
         <input type="text" name="person" value="" placeholder="Представьтесь пожалуйста">
