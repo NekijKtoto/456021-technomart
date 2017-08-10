@@ -1,5 +1,22 @@
 /*Общие стили*/
 
+html {
+  font-family: 'Cuprum', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn {
+  display:inline-block;
+}
+
+.visibility-hidden {}
+
+.label-new {}
 
 /*Шапка*/
 .header-block {
@@ -7,54 +24,174 @@
 }
 
 /*Верхняя плашка с поиском*/
-.header-block__top-line{
+.header-block__top-line-wrap {
   background-color: #33445a;
   width: 100%;
   height: 42px;
 }
 
-.header-block__logo {}
-.header-block__search-block {}
+.header-block__top-line {
+  width: 940px;
+  height: 42px;
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 220px;
+  height: 42px;
+  background-color: #ff5357;
+  border-bottom: 5px solid #c23f42;
+  font-size: 24px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.search {
+  margin-left: -20px;
+}
+
+.search__input-field {
+  background-color: #33445a;
+  border: 0 none;
+  color: white;
+  padding: 0 10px;
+}
+
 .header-block__bookmarks {}
 .header-block__basket {}
-.button-basket {}
+
+.search::before, .bookmarks::before, .basket::before {
+  content: '';
+  background-image: url(/img/sprites.png);
+  background-repeat: no-repeat;
+  margin: 0 3px;
+  left: -10px;
+  top: 3px;
+  position: relative;
+  display: inline;
+  display: inline-block;
+}
+
+.search::before {
+  background-position: -16px -15px;
+  width: 17px;
+  height: 17px;
+}
+
+.bookmarks::before {
+  background-position: -69px -15px;
+  width: 14px;
+  height: 16px;
+}
+
+.basket::before {
+  background-position: -117px -15px;
+  width: 15px;
+  height: 15px;
+}
+
+.button-basket {
+  width: 150px;
+  height: 42px;
+  background-color: #6db254;
+  line-height: 42px;
+  text-align: center;
+}
+
 
 /*Блок с заголовком и контактами*/
 .header-main-block {
   width: 940px;
   height: 160px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
-.header-main-block__site-name {} .header-main-block__contacts {} .contacts__phone {}
-.contacts__address {} .header-main-block__control {}
-.button {}
-.button-login {} .button-registration {}
+.site-name {}
+
+.header-main-block__contacts {}
+.contacts__phone {}
+.contacts__address {}
+
+.header-main-block__control {}
+
+.button-login {}
+.button-registration {}
+
 
 /*Главное меню*/
 .main-menu {}
+.main-menu__list {}
+.main-menu__item {}
+.main-menu__item_current {}
+
 
 /*Блок с картинками и кнопками*/
 .promo-block {}
+.promo-block__item {}
+
+
+/*слайдер*/
+.slider {}
+.slider__control {}
+.slider__control_left {}
+.slider__control_right {}
+
 
 /*Популярные продукты*/
 .popular-products {}
-.popular-products__header{}
-.popular-products__list{}
-
+.popular-products__list {}
+.popular-products__item {}
+.popular-products__item-picture {}
+.popular-products__item-title {}
+.popular-products__item-price {}
+.popular-products__item-price_strike {}
 
 
 /*Популярные производители*/
 .popular-manufacturers {}
-.popular-manufactirers__header{}
-.popular-products__list{}
+.popular-manufacturers__list {}
+.popular-manufacturers__item {}
+.popular-manufacturers__item-picture {}
+
 
 /*Сервисный блок*/
-.service-block{}
+.service-block {}
+.service-block__menu {}
+
 
 /*Информация о компании и контакты*/
-.information-block{}
+.information-block {}
+.contacrs-block {}
 
 /*Подвал*/
-.footer{}
-.footer-menu-block{} .footer-bottom{}
+.footer {
+  height: 300px;
+}
+
+.footer-top {
+  height:
+}
+
+.footer-menu {}
+.footer-menu__list {}
+
+.services {}
+.services-menu__list {}
+
+.footer-bottom {}
+.copyright {}
+.social-btns {}
+.feedback {}
+.authors {}
+
+.modal {}
+.modal-close {}
+.write-us {}
+.contacts-map {}
