@@ -1,0 +1,20 @@
+/*Общие стили*/
+
+/* Позиционирование */
+/* Блочная модель */
+/* Типографика */
+/* Оформление */
+/* Анимация */
+/* Разное */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cuprum', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
