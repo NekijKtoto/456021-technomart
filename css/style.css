@@ -10,11 +10,39 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Cuprum', sans-serif;
+  font-family: "PTSans" sans-serif;
+  font-size: 16px;
+  line-height: 1.85;
+  text-align: left;
+  color: #000000;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+h1, h2, h3 {
+  font-family: "Cuprum" sans-serif;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 1;
+  text-align: left;
+  color: #3d546e;
+}
+
+.slider__title h3 {
+  font-family: Cuprum;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.43;
+  text-align: left;
+  color: #3d546e;
+}
+
+.promo-block__item h3 {
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.43;
+  text-align: left;
+  color: #3d546e;
 }
