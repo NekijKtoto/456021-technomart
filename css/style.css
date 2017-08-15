@@ -10,39 +10,32 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "PTSans" sans-serif;
-  font-size: 16px;
-  line-height: 1.85;
-  text-align: left;
+  font-family: "PTSans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
   color: #000000;
 }
 
-h1, h2, h3 {
-  font-family: "Cuprum" sans-serif;
-}
-
 h2 {
-  font-size: 20px;
-  line-height: 1;
-  text-align: left;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
   color: #3d546e;
 }
 
 .slider__title h3 {
-  font-family: Cuprum;
-  font-size: 24px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 1.43;
-  text-align: left;
   color: #3d546e;
 }
 
 .promo-block__item h3 {
-  font-family: Cuprum;
-  font-size: 18px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 24px;
   font-weight: bold;
-  line-height: 1.43;
-  text-align: left;
+  line-height: 30px;
   color: #3d546e;
 }
