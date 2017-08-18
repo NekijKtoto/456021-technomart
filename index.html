@@ -18,7 +18,8 @@
         <div class="container">
           <h1 class="logo">Техномарт</h1>
           <form action="/" class="form search" method="get">
-              <input type="text" class="search__input-field" placeholder="Поиск:">
+              <label for="search" class="visually-hidden">Поиск:</label>
+              <input id="search" type="text" class="search__input-field" placeholder="Поиск:">
           </form>
           <a href="#" class="bookmarks">Закладки: 0</a>
           <a href="#" class="basket basket_not-empty">Корзина: 0</a>
@@ -58,20 +59,20 @@
     <main>
     <!-- Блок с картинками и кнопками -->
       <section class="promo-block">
-        <h2 class="visibility-hidden">Наши услуги</h2>
+        <h2 class="visually-hidden">Наши услуги</h2>
         <div class="promo-block__item">
           <section class="slider">
             <div class="slider__item">
               <div class="slider__title">
-                <h3 class="">Перфораторы</h3>
-                <span>Настоящие мужские игрушки</span>
+                <h3 class="slider__title--main">Перфораторы</h3>
+                <span class="slider__title--additional">Настоящие мужские игрушки</span>
               </div>
               <img class="products__item-picture" src="/img/perforator.jpg" width="620" height="270" alt="Перфораторы - настоящие мужские игрушки">
             </div>
             <div class="slider__item">
               <div class="slider__title">
-                <h3>Дрели</h3>
-                <span>Соседям на радость</span>
+                <h3 class="slider__title--main">Дрели</h3>
+                <span class="slider__title--additional">Соседям на радость</span>
               </div>
               <img class="products__item-picture" src="/img/drill.jpg" width="620" height="270" alt="Дрели - соседям на радость">
             </div>
@@ -275,10 +276,10 @@
         <span class="copyright">
           &copy;2010–2017 Компания «Техномарт» Все права защищены
         </span>
-        <div class="social-btns">
-          <a href="">Вконтакте</a>
-          <a href="">Facebook</a>
-          <a href="">Instagram</a>
+        <div class="social">
+          <a href="#" class="social--vk">Вконтакте</a>
+          <a href="#" class="social--fb">Facebook</a>
+          <a href="#" class="social--insta">Instagram</a>
         </div>
         <div class="feedback">
           Обратная связь
@@ -314,7 +315,7 @@
 
   <!-- Всплывающее окно карты -->
     <section class="modal write-us">
-      <h2 class="visibility-hidden">Схема проезда</h2>
+      <h2 class="visually-hidden">Схема проезда</h2>
       <a href="#" class="modal-close">X</a>
       <img class="contacts-map" src="http://placehold.it/940x450" width="940" height="450" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
     </section>
