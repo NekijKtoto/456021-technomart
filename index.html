@@ -4,9 +4,9 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum" >
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum" >
   </head>
 
   <body>
@@ -22,7 +22,7 @@
               <input id="search" type="text" class="search__input-field" placeholder="Поиск:">
           </form>
           <a href="#" class="bookmarks">Закладки: 0</a>
-          <a href="#" class="basket basket_not-empty">Корзина: 0</a>
+          <a href="#" class="basket">Корзина: 0</a>
           <a href="#" class="btn button-basket">Оформить заказ</a>
         </div>
       </section>
@@ -116,7 +116,7 @@
             </div>
             <img class="products__item-picture" src="/img/bosh-bfg-2.jpg" width="200" height="175" alt="Перфоратор BOSH BFG 9000">
             <h3 class="products__item-title">Перфоратор BOSH BFG 9000</h3>
-            <span class="products__item-price_strike">32500 Р.</span>
+            <span class="products__item-price--strike">32500 Р.</span>
             <span class="products__item-price">25500 Р.</span>
           </article>
           <article class="products__item">
@@ -126,7 +126,7 @@
             </div>
             <img class="products__item-picture" src="/img/bosh-bfg-3.jpg" width="200" height="175" alt="Перфоратор BOSH BFG 3000">
             <h3 class="products__item-title">Перфоратор BOSH BFG 3000</h3>
-            <span class="products__item-price_strike">22500 Р.</span>
+            <span class="products__item-price--strike">22500 Р.</span>
             <span class="products__item-price">15500 Р.</span>
           </article>
           <article class="products__item">
@@ -136,7 +136,7 @@
             </div>
             <img class="products__item-picture" src="/img/bosh-bfg-4.jpg" width="200" height="175" alt="Перфоратор BOSH BFG 6000">
             <h3 class="products__item-title">Перфоратор BOSH BFG 6000</h3>
-            <span class="products__item-price_strike">30500 Р.</span>
+            <span class="products__item-price--strike">30500 Р.</span>
             <span class="products__item-price">25500 Р.</span>
           </article>
           <article class="products__item label-new">
@@ -216,41 +216,42 @@
       </section>
 
       <!-- Информация о компании и контакты -->
-      <section class="information-block">
-        <span class="information-block__title">Компания "Техномарт"</span>
-        <p>
-          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.
-        </p>
-        <p>
-          Мы можем доставить ваш товар в самые отдаленные точки России!
-        </p>
-        <div>
-          Техномарт работает со многими транспортными компаниями:
-          <ul class="information-block__list">
-            <li class="information-block__item">Деловые линии</li>
-            <li class="information-block__item">Автотрейдинг</li>
-            <li class="information-block__item">ЖелДорЭкспедиция</li>
-          </ul>
-        </div>
-        <a href="#" class="btn">Подробнее о компании</a>
-      </section>
+      <div class="two-columns-wrapper">
+        <section class="information-block">
+          <h3 class="information-block__title">Компания "Техномарт"</h3>
+          <p>
+            Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.
+          </p>
+          <p>
+            Мы можем доставить ваш товар в самые отдаленные точки России!
+          </p>
+          <div>
+            Техномарт работает со многими транспортными компаниями:
+            <ul class="information-block__list">
+              <li class="information-block__item">Деловые линии</li>
+              <li class="information-block__item">Автотрейдинг</li>
+              <li class="information-block__item">ЖелДорЭкспедиция</li>
+            </ul>
+          </div>
+          <a href="#" class="btn">Подробнее о компании</a>
+        </section>
 
-      <section class="contacts-block">
-        <span class="information-block__title">Контакты</span>
-        <p>
-          Вы можете забрать свои товары сами, заехав в наш офис:
-        </p>
-        <img src="/img/mini_map.jpg" width="300" height="160" alt="Большая конюшенная улица, дом 15">
-        <a href="#" class="btn">Заблудились? Напишите нам!</a>
-      </section>
-
+        <section class="contacts-block">
+          <h3 class="contacts-block__title">Контакты</h3>
+          <p>
+            Вы можете забрать свои товары сами, заехав в наш офис:
+          </p>
+          <img src="/img/mini_map.jpg" width="300" height="160" alt="Большая конюшенная улица, дом 15">
+          <a href="#" class="btn">Заблудились? Напишите нам!</a>
+        </section>
+      </div>
     </main>
 
     <!-- Подвал -->
     <footer class="footer">
       <section class="footer-top">
         <div class="logo">Техномарт</div>
-        <nav class="footer-menu">
+        <div class="footer-menu">
           <ul class="footer-menu__list">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
@@ -258,12 +259,12 @@
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
-        </nav>
+        </div>
         <div class="contacts">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         </div>
-        <div class="services">
+        <div class="services-menu">
           <ul class="services-menu__list">
             <li><a href="#">Материалы</a></li>
             <li><a href="#">Техника</a></li>
@@ -293,7 +294,7 @@
     </footer>
 
 <!-- Всплывающее окно формы обратной связи -->
-  <section class="modal write-us">
+  <section class="modal modal--write-us">
     <h2 class="visibility-hidden">Напишите нам</h2>
     <button type="button" name="close-write-us" class="modal-close">Закрыть</button>
     <form action="/" method="post" class="form write-us">
@@ -314,10 +315,10 @@
   </section>
 
   <!-- Всплывающее окно карты -->
-    <section class="modal write-us">
+    <section class="modal modal--map">
       <h2 class="visually-hidden">Схема проезда</h2>
       <button type="button" name="close-map" class="modal-close">Закрыть</button>
-      <img class="contacts-map" src="http://placehold.it/940x450" width="940" height="450" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      <img class="map" src="http://placehold.it/940x450" width="940" height="450" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
     </section>
 
   </body>

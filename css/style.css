@@ -1,11 +1,12 @@
-/*Общие стили*/
-
 /* Позиционирование */
 /* Блочная модель */
 /* Типографика */
 /* Оформление */
 /* Анимация */
 /* Разное */
+
+
+/*Общие стили*/
 
 .visually-hidden {
   position: absolute;
@@ -24,6 +25,40 @@ body {
   line-height: 24px;
   color: #000000;
 }
+
+/*Ссылки*/
+
+a {
+  text-decoration: none;
+}
+
+.header-block__top a,
+.main-menu a,
+.footer-menu__list a {
+  color: #ffffff;
+}
+
+/*Списки*/
+
+.main-menu__list,
+.service-block__menu,
+.footer-menu__list,
+.services-menu__list {
+  list-style: none;
+}
+
+/*Кнопки*/
+
+.btn {
+  color: #ffffff;
+}
+  .btn--basket {}
+  .btn--login {}
+  .btn--logiut {}
+  .btn--registration {}
+  .btn--buy {}
+
+/*Заголовки*/
 
 h2 {
   font-family: "Cuprum", "Arial", sans-serif;
@@ -48,3 +83,154 @@ h2 {
   line-height: 30px;
   color: #3d546e;
 }
+
+/*Метка "новинка"*/
+
+.label-new {}
+
+/*ПО СТРУКТУРЕ САЙТА*/
+/*Шапка*/
+
+.page-header {}
+
+  /*Верхняя плашка с поиском*/
+  .header-block__top {
+    background-color: #293449;
+  }
+    .container {}
+      .logo {
+        color: #ffffff;
+        background-color: #ee3643;
+      }
+      .search {}
+        .search__input-field {}
+      .boormarks {}
+      .basket {}
+        .basket--not-empty {}
+
+  /*Блок с заголовком и контактами*/
+  .page-header__main {}
+    .site-name {}
+    .contacts {}
+      .contacts__phone {}
+      .contacts__address {}
+    .user-block {}
+      .user-block__wrap {}
+      .user-block__person {}
+      .user-block__button-logout {}
+      .user-block__inner-control {}
+
+  /*Главное меню*/
+  .main-menu {
+    font-size: 17px;
+    line-height: 17px;
+    color: #ffffff;
+    background-color: #3d546e;
+  }
+    .main-menu__list {}
+      .main-menu__item {}
+
+/*Хлебные крошки*/
+.breadcumbs {}
+  .breadcumbs__item {}
+
+/*Блок с картинками и кнопками*/
+.promo-block {}
+  .promo-block__item {}
+    .slider {}
+      .slider__item {}
+        .slider__title {}
+          .slider__title--main {}
+          .slider__title--additional {}
+        .products__item-picture {}
+
+/*Популярные товары*/
+.popular-products {}
+  .products__list {}
+    .products__item {}
+      .products__control {}
+        .products__control-bookmark {}
+      .products__item-picture {}
+      .products__item-title {}
+      .products__item-price {}
+        .products__item-price--strike {}
+
+/*Популярные производители*/
+.popular-manufacturers {}
+  .popular-manufacturers__list {}
+    .popular-manufacturers__item {}
+      .popular-manufacturers__item-picture {}
+
+/*Сервисный блок*/
+.service-block {}
+  .service-block p {}
+  .service-block__menu {}
+    .service-block__menu li {}
+    .service-block__menu h3 {}
+    .service-block__menu p {}
+
+/*Информация о компании и контакты*/
+.two-columns-wrapper {}
+  .information-block {}
+    .information-block__title {}
+    .information-block p {}
+    .information-block__list {}
+      .information-block__item {}
+  .contacts-block {}
+    .contacts-block__title {}
+
+/*Подвал*/
+.footer {}
+  .footer-top {
+    background-color: #32425c;
+  }
+    .footer-menu {}
+      .footer-menu__list {}
+    .contacts {}
+    .services-menu {}
+      .services-menu__list {}
+  .footer-bottom {
+    background-color: #293449;
+  }
+    .copyright {}
+    .social {}
+      .social__link {}
+        .social__link--vk {}
+        .social__link--fb {}
+        .social__link--insta {}
+    .feedback {}
+    .authors {}
+
+/*Каталог, фильтр и поиск*/
+.catalog {}
+  .filter {}
+    .filter__title {}
+    .filter__form {}
+      fieldset {}
+        legend {}
+  .sort {}
+    .sort__title {}
+    .sort__type {}
+
+/*Пагинация*/
+.pagination {}
+  .pagination__item {}
+
+/*Инфо блок на странице каталога*/
+.info-block {}
+
+/*Модальное окно*/
+.modal {}
+  .modal-close {}
+  .modal--write-us {}
+  .modal--map {}
+    .map {}
+
+/*Формы*/
+.form {}
+  .write-us {}
+  input[type="text"] {}
+  input[type="checkbox"] {}
+  input[type="radio"] {}
+  textarea {}
+  .write-us__submit {}
