@@ -17,6 +17,10 @@
   overflow: hidden;
 }
 
+html {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -24,6 +28,10 @@ body {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 /*Ссылки*/
@@ -74,14 +82,21 @@ a {
 
 /*Заголовки*/
 
-h2, h3 {
+.heading2, .heading3 {
     font-family: "Cuprum", "Arial", sans-serif;
 }
 
-h2 {
+.heading2 {
   font-size: 30px;
   line-height: 30px;
   color: #3d546e;
+}
+
+.main-title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #3d546e;
+  text-transform: uppercase;
 }
 
 /*Метка "новинка"*/
