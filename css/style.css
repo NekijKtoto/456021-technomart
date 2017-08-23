@@ -64,20 +64,26 @@ a {
 
 .btn {
   color: #ffffff;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  text-transform: uppercase;
   background-color: #ff5357;
 }
   .btn--basket {
     background-color: #63a63e;
+    font-size: 17px;
+    line-height: 18px;
+  }
+  .btn--uppercase {
+    text-transform: uppercase;
   }
   .btn--login {}
-  .btn--logiut {}
+  .btn--logout {}
   .btn--registration {}
   .btn--buy {
     color: #ffffff;
     background-color: #63a63e;
+    text-transform: uppercase;
   }
 
 /*Заголовки*/
@@ -106,7 +112,9 @@ a {
 /*ПО СТРУКТУРЕ САЙТА*/
 /*Шапка*/
 
-.page-header {}
+.page-header {
+  font-family: "Cuprum","Arial",sans-serif;
+}
 
   /*Верхняя плашка с поиском*/
   .page-header__top {
@@ -123,8 +131,14 @@ a {
       }
       .search {}
         .search__input-field {}
-      .boormarks {}
-      .basket {}
+      .bookmarks {
+        font-size: 17px;
+        line-height: 18px;
+      }
+      .basket {
+        font-size: 17px;
+        line-height: 18px;
+      }
         .basket--not-empty {}
 
   /*Блок с заголовком и контактами*/
@@ -260,6 +274,8 @@ a {
     .service-block__item-title {
       font-size: 36px;
       line-height: 24px;
+      color: #3d546e;
+      text-transform: uppercase;
     }
 
 /*Информация о компании и контакты*/
@@ -279,9 +295,14 @@ a {
     }
 
 /*Подвал*/
-.footer {}
+.footer {
+  font-family: "Cuprum","Arial",sans-serif;
+}
   .footer-top {
     background-color: #32425c;
+    font-size: 18px;
+    line-height: 24px;
+    color: #f3f7f9;
   }
     .footer-menu {}
       .footer-menu__list {}
@@ -299,6 +320,8 @@ a {
 
   .footer-bottom {
     color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
     background-color: #293449;
   }
     .copyright {}
@@ -321,8 +344,10 @@ a {
       background-color: #f7f3ec;
     }
     .filter__form {}
-      fieldset {}
-        legend {
+      .filter__form fieldset {
+        border: none;
+      }
+        .filter__form legend {
           font-size: 17px;
           line-height: 30px;
           text-tr
