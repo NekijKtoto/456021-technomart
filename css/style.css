@@ -96,6 +96,7 @@ a {
   font-size: 30px;
   line-height: 30px;
   color: #3d546e;
+  text-transform: uppercase;
 }
 
 .main-title {
@@ -149,6 +150,7 @@ a {
       font-style: italic;
       line-height: 23px;
       font-weight: 300;
+      text-transform: none;
     }
     .contacts-block {}
       .contacts__phone {
@@ -244,19 +246,22 @@ a {
         }
       .products__item-picture {}
       .products__item-title {
+        font-family: "PT Sans", "Arial", sans-serif;
         font-size: 18px;
-        line-height: 24px;
+        line-height: 20px;
         font-weight: bold;
         color: #000000;
       }
       .products__item-price {
         font-size: 17px;
+        font-weight: bold;
         line-height: 18px;
         color: #ffffff;
         background-color: #ee3643;
       }
         .products__item-price--strike {
           font-size: 17px;
+          font-weight: bold;
           line-height: 18px;
           color: #a9a9a9;
           text-decoration: line-through;
@@ -284,19 +289,29 @@ a {
     .information-block__title {
       font-size: 30px;
       line-height: 24px;
+      text-transform: uppercase;
     }
     .information-block p {}
     .information-block__list {}
-      .information-block__item {}
+      .information-block__item {
+        font-family: "Cuprum", "Arial", sans-serif;
+        font-size: 18px;
+        line-height: 20px;
+      }
   .contacts-block {}
     .contacts-block__title {
       font-size: 30px;
       line-height: 24px;
+      text-transform: uppercase;
     }
 
 /*Подвал*/
 .footer {
   font-family: "Cuprum","Arial",sans-serif;
+}
+.footer .logo {
+  font-size: 30px;
+  line-height: 30px;
 }
   .footer-top {
     background-color: #32425c;
