@@ -470,7 +470,7 @@ a {
         .filter__form legend {
           font-size: 17px;
           line-height: 30px;
-          text-tr
+          text-transform: uppercase;
         }
   .sort {
     background-color: #f7f3ec;
