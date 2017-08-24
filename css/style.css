@@ -401,6 +401,14 @@ a {
   }
     .footer-menu {}
       .footer-menu__list {}
+        .footer-menu__list a:hover, .footer-menu__list a:focus {
+          text-decoration: underline;
+        }
+
+        .footer-menu__list a:active{
+          opacity: 0.5;
+          text-decoration: none;
+        }
     .contacts {
       color: #ffffff;
     }
@@ -412,6 +420,13 @@ a {
         .services-menu__list a{
           color: #ffda96;
         }
+        .services-menu__list a:hover, .services-menu__list a:focus {
+          text-decoration: underline;
+        }
+        .services-menu__list a:active {
+          opacity: 0.5;
+          text-decoration: none;
+        }
 
   .footer-bottom {
     color: #ffffff;
@@ -422,6 +437,9 @@ a {
     .copyright {}
     .social {}
       .social__link {}
+        .social__link:hover, .social__link:focus, .social__link:active {
+          background-color: #ee3643;
+        }
         .social__link--vk {}
         .social__link--fb {}
         .social__link--insta {}
@@ -430,6 +448,13 @@ a {
     .feedback a, .authors a {
       color: #ffda96;
     }
+      .feedback a:hover, .feedback a:focus, .authors a:hover, .authors a:focus {
+        text-decoration: underline;
+      }
+      .feedback a:active, .authors:active {
+        text-decoration: none;
+        color: #ee3643;
+      }
 
 /*Каталог, фильтр и поиск*/
 .catalog {}
