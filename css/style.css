@@ -96,7 +96,11 @@ a {
   .btn--uppercase {
     text-transform: uppercase;
   }
-  .btn--login {}
+  .btn--login {
+    width: 120px;
+    height: 45px;
+    display: block;
+  }
     a.btn--login:hover, a.btn--login:focus {
       color: #ee3643;
     }
@@ -104,7 +108,11 @@ a {
       color: rgba(0, 0, 0, 0.3);
     }
   .btn--logout {}
-  .btn--registration {}
+  .btn--registration {
+    width: 150px;
+    height: 45px;
+    display: block;
+  }
     a.btn--registration:hover, a.btn--registration:focus {
       color: #ee3643;
     }
@@ -149,6 +157,8 @@ a {
 
 .page-header {
   font-family: "Cuprum","Arial",sans-serif;
+  background-color: #f3f7f8;
+  overflow: hidden;
 }
 
   /*Верхняя плашка с поиском*/
@@ -182,16 +192,29 @@ a {
 
       }
       .search {}
+        .search__label {
+          padding-left: 9px;
+          position: absolute;
+          top: 12px;
+        }
+
         .search__input-field {
           width: 290px;
           margin-left: 20px;
-          background-color: #212a3a;
+          color: #ffffff;
+          background-color: #293449;
           border: none;
           padding: 10px;
           width: 290px;
+          height: 42px;
+          font-family: "Cuprum","Arial",sans-serif;
+          font-size: 17px;
+          line-height: 18px;
         }
+
         .search__input-field:focus {
           background-color: #ffffff;
+          border: none;
         }
       .bookmarks, .basket {
         font-size: 17px;
@@ -215,31 +238,53 @@ a {
         }
 
   /*Блок с заголовком и контактами*/
-  .page-header__main {}
+  .page-header__main {
+    width: 940px;
+    padding-left: 50px;
+    padding-top: 50px;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
     .site-name {
-      color: #ff5357;
+      width: 200px;
+      margin: 0;
       font-size: 16px;
       font-style: italic;
       line-height: 23px;
       font-weight: 300;
+      color: #ff5357;
       text-transform: none;
     }
-    .contacts-block {}
-      .contacts__phone {
+    .contact-block {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+      .contact__phone {
         color: #fb463c;
+        width: 265px;
+        height: 46px;
         font-size: 21px;
-        line-height: 18px;
+        line-height: 46px;
+        border: 3px solid #ffffff;
       }
-      .contacts__address {
+      .contact__address {
         color: #3d546e;
         font-size: 14px;
         line-height: 24px;
       }
-    .user-block {}
+    .user-block {
+      display: flex;
+      width: 280px;
+      justify-content: space-between;
+      text-align: center;
+    }
       .user-block .btn {
         color: #000000;
         font-size: 21px;
-        line-height: 18px;
+        line-height: 45px;
         background-color: #ffffff;
       }
       .user-block__wrap {}
@@ -253,13 +298,30 @@ a {
 
   /*Главное меню*/
   .main-menu {
+    height: 55px;
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 65px;
     font-size: 17px;
     line-height: 17px;
     color: #ffffff;
     background-color: #3d546e;
+    border-bottom: 5px solid #33445a;
   }
-    .main-menu__list {}
-      .main-menu__item {}
+    .main-menu__list {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+      .main-menu__item {
+        display: inline-block;
+        width: 128px;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+      }
         .main-menu__item:hover, .main-menu__item:focus {
           background-color: #293449;
         }
